@@ -1,1 +1,40 @@
-<p>exclusao-viagem works!</p>
+<div *ngSwitch="num"></div>
+
+<nav class="navbar fixed-top navbar-light bg-light">
+    <a class="navbar-brand ml-5" href="#">Controle de Viagens</a>
+    <a class="navbar-brand my-2 my-sm-0 mr-5" style="color:lightgray" href="#">Nova Viagem</a>
+  </nav>
+  <div class="card">
+    <div class="card-header">
+      Excluir Viagem
+    </div>
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col-1">Destino</th>
+                <th scope="col-1">Tipo</th>
+                <th scope="col-2">Data de Chegada</th>
+                <th scope="col-2">Data de saída</th>
+                <th scope="col-1">Orçamento</th>
+                <th scope="col-1">Qtde. pessoas</th>
+                <th scope="col-2"></th>
+                <th scope="col-2"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>LAZER</td>
+                <td>08/06/2021</td>
+                <td>18/06/2021</td>
+                <td>R$4.0000,00</td>
+                <td>4</td>
+                <td><a class="btn btn-primary" href="#" role="button">Voltar</a></td>
+                <td><a class="btn btn-danger" href="localhost:4200/exclusao" role="button">Confirmar</a></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+  
