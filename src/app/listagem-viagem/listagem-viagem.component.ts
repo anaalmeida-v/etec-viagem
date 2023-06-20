@@ -14,5 +14,4 @@ export class ListagemViagemComponent {
     {"destino":"Nova Zelandia", "tipo": "LAZER", "dataDeChegada":"04/09/2021", "dataDeSaida":"11/10/2021", "orcamento":"7.000,00", "qtd":"4"},
     {"destino":"Australia", "tipo": "LAZER", "dataDeChegada":"04/09/2021", "dataDeSaida":"11/06/2021", "orcamento":"8.000,00", "qtd":"2"}
   ];
-
 }

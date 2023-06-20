@@ -8,8 +8,8 @@ import { Component, Input } from '@angular/core';
 export class ExclusaoViagemComponent {
 
   constructor() { }
-  
-  @Input() num:number=0;
+
+
 
 
 }

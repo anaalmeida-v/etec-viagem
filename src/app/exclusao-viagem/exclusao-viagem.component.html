@@ -1,4 +1,4 @@
-<div *ngSwitch="num"></div>
+
 
 <nav class="navbar fixed-top navbar-light bg-light">
     <a class="navbar-brand ml-5" href="#">Controle de Viagens</a>
@@ -24,17 +24,17 @@
             </thead>
             <tbody>
               <tr>
-                <td></td>
+                <td>Acapulco</td>
                 <td>LAZER</td>
                 <td>08/06/2021</td>
                 <td>18/06/2021</td>
-                <td>R$4.0000,00</td>
+                <td>R$4.000,00</td>
                 <td>4</td>
-                <td><a class="btn btn-primary" href="#" role="button">Voltar</a></td>
-                <td><a class="btn btn-danger" href="localhost:4200/exclusao" role="button">Confirmar</a></td>
+                <td><a class="btn btn-primary" [routerLink]="['']" role="button">Voltar</a></td>
+                <td><a class="btn btn-danger" [routerLink]="['']" role="button" >Confirmar</a></td>
+
               </tr>
             </tbody>
           </table>
     </div>
   </div>
-  

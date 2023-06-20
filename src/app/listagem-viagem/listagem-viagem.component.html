@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top navbar-light bg-light">
     <a class="navbar-brand ml-5" href="#">Controle de Viagens</a>
-    <a class="navbar-brand my-2 my-sm-0 mr-5" style="color:lightgray" href="#">Nova Viagem</a>
+    <a class="navbar-brand my-2 my-sm-0 mr-5" style="color:lightgray" [routerLink]="['/novaviagem']">Nova Viagem</a>
   </nav>
   <div class="card">
     <div class="card-header">
@@ -19,40 +19,15 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>{{viagens[0].destino}}</td>
-            <td>{{viagens[0].tipo}}</td>
-            <td>{{viagens[0].dataDeChegada}}</td>
-            <td>{{viagens[0].dataDeSaida}}</td>
-            <td><a class="btn btn-secondary" href="localhost:4200/detalhes"  role="button">Detalhes</a></td>
-            <td><a class="btn btn-warning" href="localhost:4200/exclusao" role="button">Excluir</a></td>
-          </tr>
-          <tr>
-            <td>{{viagens[1].destino}}</td>
-            <td>{{viagens[1].tipo}}</td>
-            <td>{{viagens[1].dataDeChegada}}</td>
-            <td>{{viagens[1].dataDeSaida}}</td>
-            <td><a class="btn btn-secondary" href="#" role="button">Detalhes</a></td>
-            <td><a class="btn btn-warning" href="localhost:4200/exclusao" role="button">Excluir</a></td>
-          </tr>
-          <tr>
-            <td>{{viagens[2].destino}}</td>
-            <td>{{viagens[2].tipo}}</td>
-            <td>{{viagens[2].dataDeChegada}}</td>
-            <td>{{viagens[2].dataDeSaida}}</td>
-            <td><a class="btn btn-secondary" href="#" role="button">Detalhes</a></td>
-            <td><a class="btn btn-warning" href="localhost:4200/exclusao" role="button">Excluir</a></td>
-          </tr>
-          <tr>
-            <td>{{viagens[3].destino}}</td>
-            <td>{{viagens[3].tipo}}</td>
-            <td>{{viagens[3].dataDeChegada}}</td>
-            <td>{{viagens[3].dataDeSaida}}</td>
-            <td><a class="btn btn-secondary" href="#" role="button">Detalhes</a></td>
-            <td><a class="btn btn-warning" href="localhost:4200/exclusao" role="button">Excluir</a></td>
+          <tr *ngFor="let e of viagens">
+            <td>{{e.destino}}</td>
+            <td>{{e.tipo}}</td>
+            <td>{{e.dataDeChegada}}</td>
+            <td>{{e.dataDeSaida}}</td>
+            <td><a class="btn btn-secondary" [routerLink]="['/detalhes']" role="button">Detalhes</a></td>
+            <td><a class="btn btn-warning" [routerLink]="['/exclusao']" role="button">Excluir</a></td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
-  
